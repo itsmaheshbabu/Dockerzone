@@ -7,3 +7,5 @@ spec:
   containers:
     - name: alpine
       image: alpine:latest
+      command: ["sleep"]
+      args: ["1d"]
