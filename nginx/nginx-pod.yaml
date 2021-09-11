@@ -7,8 +7,8 @@ spec:
   containers:
     - name: nginx-container 
       image: nginx:1.21.1
-      livenessprobe: 
-        httpget:
+      livenessProbe: 
+        httpGet:
           path: /
           port: 80
       ports:
