@@ -11,11 +11,11 @@ spec:
     metadata:
       labels:
         app: myapp
-        version: v1
+        version: v2
     spec:
       containers:
         - name: myapp-container
-          image: mahesh91docker/myapp:1.0
+          image: mahesh91docker/myapp:2.0
           livenessProbe:
             httpGet:
               path: /
