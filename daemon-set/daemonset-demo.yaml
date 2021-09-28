@@ -4,7 +4,7 @@ kind: DaemonSet
 metadata:
   name: mydaemon-set
   labels:
-    app: daemon demo
+    app: daemon-demo
 spec:
   minReadySeconds: 5
   selector:
@@ -18,5 +18,5 @@ spec:
       containers: 
         - name: fluentd
           image: fluentd
-          
+
   
