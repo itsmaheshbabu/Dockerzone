@@ -13,7 +13,7 @@ spec:
         - name: dummyjob
           image: alpine
           args: 
-            - /bin/bash
+            - /bin/sh
             - -c 
-            - sleep2m 
+            - sleep 2m 
       restartPolicy: OnFailure  
