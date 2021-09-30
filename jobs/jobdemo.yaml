@@ -16,4 +16,4 @@ spec:
             - /bin/bash
             - -c 
             - sleep2m 
-    restartPolicy: OnFailure  
+      restartPolicy: OnFailure  
