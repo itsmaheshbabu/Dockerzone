@@ -1,0 +1,26 @@
+--- 
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  labels:
+    name: Cronjob-demo
+spec:
+  jobTemplate:
+    metadata:
+      labels:
+        Cronjob: start-services
+    spec:
+      template:
+        metadata:
+          labels:
+            app: alpine
+        spec:
+          containers:
+            - name: dummyjob
+              image: alpine
+              args:
+                - /bin/sh
+                - -c 
+                - sleep 2m 
+          restartPolicy: OnFailure
+  schedule: "*/30 * * * *"
