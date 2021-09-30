@@ -13,7 +13,7 @@ spec:
       template:
         metadata:
           labels:
-            app: alpine
+            Cronjob: start-services 
         spec:
           containers:
             - name: dummyjob
