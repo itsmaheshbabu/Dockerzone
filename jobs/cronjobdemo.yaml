@@ -2,8 +2,7 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  labels:
-    name: Cronjob-demo
+  name: Cronjob-demo
 spec:
   schedule: "*/30 * * * *"
   jobTemplate:
@@ -22,6 +21,6 @@ spec:
               args:
                 - /bin/sh
                 - -c 
-                - sleep 2m 
+                - "sleep 2m" 
           restartPolicy: OnFailure
  
