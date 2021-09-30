@@ -8,12 +8,12 @@ spec:
     metadata:
       labels: 
         job: start-services
-  spec:
-    containers:
-      - name: dummyjob
-        image: alpine
-        args: 
-          - /bin/bash
-          - -c 
-          - sleep2m 
+    spec:
+      containers:
+        - name: dummyjob
+          image: alpine
+          args: 
+            - /bin/bash
+            - -c 
+            - sleep2m 
     restartPolicy: OnFailure  
