@@ -5,6 +5,7 @@ metadata:
   labels:
     name: Cronjob-demo
 spec:
+  schedule: "*/30 * * * *"
   jobTemplate:
     metadata:
       labels:
@@ -23,4 +24,4 @@ spec:
                 - -c 
                 - sleep 2m 
           restartPolicy: OnFailure
-  schedule: "*/30 * * * *"
+ 
