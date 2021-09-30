@@ -2,7 +2,7 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: Cronjob-demo
+  name: cronjob-demo
 spec:
   schedule: "*/30 * * * *"
   jobTemplate:
