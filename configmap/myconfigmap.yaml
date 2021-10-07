@@ -4,5 +4,10 @@ kind: ConfigMap
 metadata: 
   name: cm-demo
 data:
-  ui.properties:
+  ui.properties: |
+    color.foreground=white
+    color.background=black
+  retries: "5"
+  ui_properties_filename: 'ui.properties'
+  debug: verbose
     
