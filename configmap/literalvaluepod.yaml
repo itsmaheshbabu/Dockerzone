@@ -11,7 +11,7 @@ spec:
         - /bin/sh
         - -c 
         - sleep 1d
-  envFrom:
-    - configMapRef:
-        name: onevalue-cmap
+      envFrom:
+        - configMapRef:
+            name: onevalue-cmap
       
