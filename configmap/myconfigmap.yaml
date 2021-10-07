@@ -7,8 +7,11 @@ data:
   ui.properties: |
     color.foreground=white
     color.background=black
+    allow.textmode=true
   retries: "5"
   ui_properties_filename: 'ui.properties'
   debug: verbose
   download_url: "http://directdevops.blog"
+  
+    
     
